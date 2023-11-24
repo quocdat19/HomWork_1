@@ -2,32 +2,32 @@ import java.util.Scanner;
 
 public class DiemTB {
     public static void main(String[] args) {
-        int TB;
-        int toan, ly, hoa, van, ta;
+        float TB;
+        float toan, ly, hoa, van, ta;
         Scanner scanner = new Scanner(System.in);
         do{
             System.out.println("toan: ");
-            toan = Integer.parseInt(scanner.nextLine());
+            toan = Float.parseFloat(scanner.nextLine());
         }while(toan < 0 && toan > 10);
 
         do{
             System.out.println("ly: ");
-            ly = Integer.parseInt(scanner.nextLine());
+            ly = Float.parseFloat(scanner.nextLine());
         }while(ly < 0 || ly > 10);
 
         do{
             System.out.println("hoa: ");
-            hoa = Integer.parseInt(scanner.nextLine());
+            hoa = Float.parseFloat(scanner.nextLine());
         }while(hoa < 0 || hoa > 10);
 
         do{
             System.out.println("van: ");
-            van = Integer.parseInt(scanner.nextLine());
+            van = Float.parseFloat(scanner.nextLine());
         }while(van < 0 || van > 10);
 
         do{
             System.out.println("ta: ");
-            ta = Integer.parseInt(scanner.nextLine());
+            ta = Float.parseFloat(scanner.nextLine());
         }while(ta < 0 || ta > 10);
 
         TB = (toan + ly + hoa + van + ta) / 5;
